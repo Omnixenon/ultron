@@ -5,8 +5,8 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'plugin:jest/recommended',
-    'plugin:jest/style',
+    // 'plugin:jest/recommended',
+    // 'plugin:jest/style',
     'plugin:testing-library/react',
     'google',
     'prettier',
@@ -42,7 +42,7 @@ module.exports = {
     'testing-library/render-result-naming-convention': 'off',
     'require-jsdoc': 'off',
 
-    'jest/no-export': 'off',
+    // 'jest/no-export': 'off',
   },
   settings: {
     react: {

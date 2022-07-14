@@ -18,11 +18,11 @@
     "eslint:format": "eslint src --ext .ts,.tsx",
     "stylelint:write": "stylelint --fix './src/**/*.styles.{ts,tsx}'",
     "stylelint:format": "stylelint './src/**/*.styles.{ts,tsx}'",
-    "test:jest": "jest -c config/jest/jest.config.ts",
+    "test:jest": "jest -c config/jest/jest.config.ts './src/'",
     "lint:write": "pnpm eslint:write && pnpm prettier:write && pnpm prettier:write",
     "lint:format": "pnpm eslint:format && pnpm prettier:format && pnpm prettier:format",
     "lint": "pnpm lint:format && pnpm lint:write",
-    "test": "pnpm test",
+    "test": "pnpm test:jest",
     "watch": "pnpm storybook",
     "prepare": "husky install"
   },

@@ -13,7 +13,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 )
 
-Button.displayName = '@ultron/primitive/Button'
+Button.displayName = 'Button'
 
 Button.defaultProps = {
   type: 'button',

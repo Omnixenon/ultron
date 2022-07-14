@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["./components/*"]
+      "@components/*": ["./components/*"],
+      "@tests/*": ["./tests/*"],
+      "@types/*": ["./types/*"]
     },
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext", "ESNext.AsyncIterable"],
@@ -22,6 +24,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx"
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
   },
   "include": ["src"]
 }

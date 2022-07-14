@@ -114,6 +114,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
+      "pnpm test",
       "pnpm lint"
     ]
   }

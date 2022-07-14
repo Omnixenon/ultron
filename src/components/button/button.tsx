@@ -17,6 +17,7 @@ Button.displayName = 'Button'
 
 Button.defaultProps = {
   type: 'button',
+  onClick: event => console.log({ event }),
 }
 
 export default Button

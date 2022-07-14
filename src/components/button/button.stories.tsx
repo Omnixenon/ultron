@@ -7,6 +7,9 @@ export default {
   args: {
     children: 'Button',
   },
+  parameters: {
+    actions: { argTypesRegex: '^on.*' },
+  },
 } as ComponentMeta<typeof AppButton>
 
 const Template: ComponentStory<typeof AppButton> = args => (

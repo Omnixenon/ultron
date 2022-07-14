@@ -14,12 +14,17 @@
     "build:storybook": "build-storybook -c ./config/storybook",
     "prettier:write": "prettier --write \"src/**/*.{ts,tsx}\"",
     "prettier:format": "prettier --check \"src/**/*.{ts,tsx}\"",
-    "lint:code": "eslint src --ext .ts,.tsx --max-warnings=0",
-    "lint:styled": "stylelint './src/**/*.styles.{ts,tsx}' --max-warnings=0",
+    "eslint:write": "eslint --fix src --ext .ts,.tsx",
+    "eslint:format": "eslint src --ext .ts,.tsx",
+    "stylelint:write": "stylelint --fix './src/**/*.styles.{ts,tsx}'",
+    "stylelint:format": "stylelint './src/**/*.styles.{ts,tsx}'",
     "test:jest": "jest -c config/jest/jest.config.ts",
-    "lint": "pnpm lint:code && pnpm lint:styled && pnpm prettier:format",
+    "lint:write": "pnpm eslint:write && pnpm prettier:write && pnpm prettier:write",
+    "lint:format": "pnpm eslint:format && pnpm prettier:format && pnpm prettier:format",
+    "lint": "pnpm lint:format && pnpm lint:write",
     "test": "pnpm test",
-    "watch": "pnpm storybook"
+    "watch": "pnpm storybook",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -106,5 +111,10 @@
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "styled-components": "^5.3.5"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "pnpm lint"
+    ]
   }
 }

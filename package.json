@@ -18,7 +18,7 @@
     "eslint:format": "eslint src --ext .ts,.tsx",
     "stylelint:write": "stylelint --fix './src/**/*.styles.{ts,tsx}'",
     "stylelint:format": "stylelint './src/**/*.styles.{ts,tsx}'",
-    "test:jest": "jest -c config/jest/jest.config.ts './src/'",
+    "test:jest": "jest -c config/jest/jest.config.ts",
     "lint:write": "pnpm eslint:write && pnpm prettier:write && pnpm prettier:write",
     "lint:format": "pnpm eslint:format && pnpm prettier:format && pnpm prettier:format",
     "lint": "pnpm lint:format && pnpm lint:write",
@@ -118,7 +118,6 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "pnpm test",
       "pnpm lint"
     ]
   }

@@ -5,7 +5,7 @@
       "@components/*": ["./components/*"],
       "@tests/*": ["./tests/*"],
       "@types/*": ["./types/*"],
-      "@theme/*": ["./theme/*"],
+      "@theme/*": ["./theme/*"]
     },
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext", "ESNext.AsyncIterable"],
@@ -31,5 +31,5 @@
       "module": "commonjs"
     }
   },
-  "include": ["src"],
+  "include": ["src"]
 }

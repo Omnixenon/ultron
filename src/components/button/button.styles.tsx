@@ -1,16 +1,11 @@
-import styled, { css } from 'styled-components'
-
-const BUTTON_RESET = css`
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: transparent;
-`
+import { ultronColor, ultronTheme, ultronTypography } from '@theme/index'
+import styled from 'styled-components'
 
 namespace S {
   export const ButtonRoot = styled.button`
-    ${BUTTON_RESET};
+    ${ultronTypography('button1')};
+    background-color: ${ultronColor('indigo', 800)};
+    color: ${ultronTheme('white')};
   `
 }
 

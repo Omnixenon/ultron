@@ -1,10 +1,22 @@
+import ULTRON_COLORS from './ultron-colors'
+import ULTRON_TYPOGRAPHY from './ultron-typography'
+
 const DEFAULT_THEME = {
+  scheme: 'light',
+
+  colors: ULTRON_COLORS,
+
+  white: '#FFFFFF',
+  black: '#000000',
+
+  typography: ULTRON_TYPOGRAPHY,
+
   primary: {
     color: 'blue',
-    shade: {
-      light: 6,
-      dark: 8,
-    },
+    radius: 'sm',
+    shadow: 'xs',
+    shade: 600,
+    typography: 'body1',
   },
 
   shadows: {
@@ -44,6 +56,6 @@ const DEFAULT_THEME = {
     xl: 24,
     xxl: 28,
   },
-}
+} as const
 
-export default DEFAULT_THEME
+export const ULTRON_DEFAULT_THEME = DEFAULT_THEME

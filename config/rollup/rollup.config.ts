@@ -25,7 +25,14 @@ export default [
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
+      typescript({
+        tsconfig: './tsconfig.json',
+        exclude: [
+          './src/**/*.spec.tsx',
+          './src/**/*.spec.ts',
+          './src/types/ultron-styled.d.ts',
+        ],
+      }),
     ],
   },
   {

@@ -1,5 +1,8 @@
 // @ts-nocheck
-import { ULTRON_THEME, ULTRON_THEME_OVERRIDE } from '@theme/types/ultron-theme'
+import {
+  ULTRON_THEME,
+  ULTRON_THEME_OVERRIDE,
+} from '@theme/types/ultron-final-theme'
 
 const mergeTheme = (
   currentTheme: ULTRON_THEME,

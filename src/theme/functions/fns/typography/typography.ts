@@ -1,6 +1,7 @@
+import { ULTRON_DEFAULT_THEME } from '@theme/default-theme'
+import { ULTRON_BASE_THEME } from '@theme/types/ultron-base-theme'
 import ULTRON_TYPOGRAPHY from '@theme/ultron-typography'
 import { pathOr } from 'ramda'
-import { ULTRON_BASE_THEME, ULTRON_DEFAULT_THEME } from '../../..'
 
 type TYPOGRAPHY_KEYS = keyof typeof ULTRON_TYPOGRAPHY
 

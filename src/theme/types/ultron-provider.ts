@@ -1,4 +1,4 @@
-import { ULTRON_THEME, ULTRON_THEME_OVERRIDE } from './ultron-theme'
+import { ULTRON_THEME, ULTRON_THEME_OVERRIDE } from './ultron-final-theme'
 
 export type ULTRON_DEFAULT_PROPS = Record<string, Record<string, any>>
 

@@ -1,6 +1,7 @@
 import type { StorybookConfig } from '@storybook/core-common'
 import path from 'path'
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
+import { ResolvePluginInstance } from 'webpack'
 
 const config: StorybookConfig = {
   stories: ['../../src/**/*.stories.mdx', '../../src/**/*.stories.@(ts|tsx)'],
@@ -33,7 +34,7 @@ const config: StorybookConfig = {
         new TsconfigPathsPlugin({
           extensions: ['.ts', '.tsx'],
           configFile: path.join(__dirname, '../../tsconfig.json'),
-        }),
+        }) as unknown as ResolvePluginInstance,
       ],
     }
 

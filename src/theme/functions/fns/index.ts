@@ -1,2 +1,7 @@
 export * from './colors/colors'
+export * from './hover/hover'
+export * from './radius/radius'
+export * from './size/size'
+export * from './spacing/spacing'
+export * from './transitions/transitions'
 export * from './typography/typography'

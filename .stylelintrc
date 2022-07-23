@@ -1,7 +1,5 @@
 {
-  "processors": [
-    "stylelint-processor-styled-components"
-  ],
+  "processors": ["stylelint-processor-styled-components"],
   "extends": [
     "stylelint-config-standard-scss",
     "stylelint-config-styled-components"
@@ -11,28 +9,22 @@
     "selector-type-case": [
       "lower",
       {
-        "ignoreTypes": [
-          "/^\\$\\w+/"
-        ]
+        "ignoreTypes": ["/^\\$\\w+/"]
       }
     ],
     "selector-type-no-unknown": [
       true,
       {
-        "ignoreTypes": [
-          "/-styled-mixin/",
-          "/^\\$\\w+/"
-        ]
+        "ignoreTypes": ["/-styled-mixin/", "/^\\$\\w+/"]
       }
     ],
     "value-keyword-case": [
       "lower",
       {
-        "ignoreKeywords": [
-          "dummyValue"
-        ]
+        "ignoreKeywords": ["dummyValue"]
       }
     ],
-    "declaration-colon-newline-after": null
+    "declaration-colon-newline-after": null,
+    "declaration-empty-line-before": "always"
   }
 }

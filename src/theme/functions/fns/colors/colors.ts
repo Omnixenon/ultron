@@ -1,11 +1,11 @@
-import ULTRON_COLORS from '@theme/ultron-colors'
-import { pathOr } from 'ramda'
+import { ULTRON_DEFAULT_THEME } from '@theme/default-theme'
 import {
   ULTRON_BASE_THEME,
-  ULTRON_DEFAULT_THEME,
   ULTRON_THEME_COLORS,
   ULTRON_THEME_COLORS_SHADES,
-} from '../../..'
+} from '@theme/types/ultron-base-theme'
+import ULTRON_COLORS from '@theme/ultron-colors'
+import { pathOr } from 'ramda'
 
 export const themeColor =
   (theme: ULTRON_BASE_THEME) =>

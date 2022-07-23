@@ -1,9 +1,9 @@
-import { ULTRON_THEME } from '@theme/types/ultron-theme'
-import ULTRON_TYPOGRAPHY from '@theme/ultron-typography'
+import { ULTRON_THEME_TYPOGRAPHY } from '@theme/types/ultron-base-theme'
+import { ULTRON_THEME } from '@theme/types/ultron-final-theme'
 import { ThemedStyledProps } from 'styled-components'
 
 export const ultronTypography =
-  (key: keyof typeof ULTRON_TYPOGRAPHY) =>
+  (key: ULTRON_THEME_TYPOGRAPHY) =>
   <P extends unknown>(
     props: ThemedStyledProps<P, ULTRON_THEME>
   ): Record<string, string> => {

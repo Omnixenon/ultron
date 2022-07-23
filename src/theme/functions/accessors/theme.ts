@@ -1,5 +1,5 @@
-import { Paths } from '@theme/index'
-import { ULTRON_THEME } from '@theme/types/ultron-theme'
+import { ULTRON_THEME } from '@theme/types/ultron-final-theme'
+import { Paths } from '@theme/types/ultron-theme-funcs'
 import { path } from 'ramda'
 import { ThemedStyledProps } from 'styled-components'
 

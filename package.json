@@ -19,11 +19,11 @@
     "stylelint:write": "stylelint --fix './src/**/*.styles.{ts,tsx}'",
     "stylelint:format": "stylelint './src/**/*.styles.{ts,tsx}'",
     "test:jest": "jest -c config/jest/jest.config.ts",
-    "lint:write": "pnpm eslint:write && pnpm prettier:write && pnpm prettier:write",
-    "lint:format": "pnpm eslint:format && pnpm prettier:format && pnpm prettier:format",
-    "lint": "pnpm lint:format && pnpm lint:write",
-    "test": "pnpm test:jest",
-    "watch": "pnpm storybook",
+    "lint:write": "yarn eslint:write && yarn prettier:write && yarn prettier:write",
+    "lint:format": "yarn eslint:format && yarn prettier:format && yarn prettier:format",
+    "lint": "yarn lint:format && yarn lint:write",
+    "test": "yarn test:jest",
+    "watch": "yarn storybook",
     "prepare": "husky install"
   },
   "repository": {
@@ -43,6 +43,7 @@
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
+    "@jest/types": "^28.1.3",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
@@ -52,7 +53,6 @@
     "@storybook/addon-links": "^6.5.9",
     "@storybook/builder-webpack4": "^6.5.9",
     "@storybook/builder-webpack5": "^6.5.9",
-    "@storybook/core-common": "^6.5.9",
     "@storybook/manager-webpack4": "^6.5.9",
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/react": "^6.5.9",
@@ -95,7 +95,6 @@
     "react-docgen-typescript": "^2.2.2",
     "react-dom": "17.0.0",
     "react-is": ">= 16.8.0",
-    "require-from-string": "^2.0.2",
     "rollup": "^2.76.0",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -118,7 +117,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "pnpm lint"
+      "yarn lint"
     ]
   }
 }
